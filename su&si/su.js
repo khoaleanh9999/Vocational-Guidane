@@ -43,3 +43,11 @@ function signinWithGithub() {
     window.location.href = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=user`;
 }
 
+// Email/Phone
+function signinWithEmail() {
+    const email = prompt("Vui lòng nhập email hoặc số điện thoại của bạn:");
+    if (email) {
+        console.log('Email/Phone:', email);
+        // Gửi email/số điện thoại đến server để xử lý đăng ký
+    }
+}
